@@ -1,39 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neptune Velocity — Velocity made good</title>
-    <meta name="description" content="Neptune Velocity is a boutique consulting firm helping organizations navigate complexity and build high-integrity systems for long-range success." />
-    
-    <!-- Google Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-    
-    <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune Velocity</title>
     <style>
-      body {
-        font-family: 'Inter', system-ui, sans-serif;
-      }
+        body {
+            font-family: 'Freight Text Pro', Georgia, serif;
+            line-height: 1.6;
+            color: #0a1f2e;
+            background-color: #f5f5f5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            margin-bottom: 60px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            font-family: 'Söhne', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        
+        nav a {
+            color: #0a1f2e;
+            text-decoration: none;
+            margin-right: 20px;
+            transition: opacity 0.2s ease;
+        }
+        
+        nav a:hover {
+            opacity: 0.7;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+        
+        main {
+            font-size: 18px;
+        }
+        
+        p {
+            margin-bottom: 30px;
+        }
+        
+        .emphasis {
+            font-style: italic;
+            font-weight: 500;
+        }
+        
+        footer {
+            margin-top: 80px;
+            font-family: 'Söhne', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            
+            nav {
+                margin-bottom: 40px;
+            }
+            
+            h1 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+        }
     </style>
-  </head>
-  <body class="bg-white text-black h-screen w-screen flex items-center justify-center px-6">
-    <div class="text-center space-y-6">
-     <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900">
-Neptune Velocity
-</h1>
-<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mt-4">
-A boutique consultancy for complex times. We work with leaders, builders, and institutions to make sense of systems, align strategy with reality, and plot clear paths through uncertainty.
-</p>
-<p class="text-base md:text-lg text-gray-500 text-center mt-6">
-Velocity made good.
-</p>
+</head>
+<body>
+    <header>
 
-      <!-- Uncomment if you want a contact link for now -->
-      <!-- <a href="mailto:hello@neptunevmg.com" class="text-sm text-blue-500 hover:underline">
-        Get in touch
-      </a> -->
-    </div>
-  </body>
+        <h1>Neptune Velocity</h1>
+    </header>
+    
+    <main>
+        <p>Neptune Velocity is a studio and a metaphor.</p>
+        
+        <p>Neptune is far. To reach it takes more than speed. It takes direction. Precision. Endurance. You need to know where you're going. You need a reliable vessel. You need the right crew. The journey is the work.</p>
+        
+        <p>Neptune Velocity is a space for that work. Work that navigates complexity. Work that charts paths forward. Work that sits between design, infrastructure, interaction, and governance.</p>
+        
+        <p>From advisory work to lectures, consulting to convening— Neptune Velocity operates at the intersection of infrastructure, governance, and consequence.</p>
+        
+        <p class="emphasis">Velocity Made Good. This is where the work begins.</p>
+    </main>
+    
+    <footer>
+        <p>© 2025 Neptune Velocity</p>
+    </footer>
+</body>
 </html>
