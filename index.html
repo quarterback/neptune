@@ -1,125 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Neptune Velocity</title>
-  <meta name="description" content="Neptune Velocity is a studio for navigating complexity at human scale. Systems, services, decisions—mapped for the long distance ahead.">
+  <meta name="description" content="A studio for navigating complexity and designing clarity.">
+  
   <script src="https://unpkg.com/@unocss/runtime"></script>
-  <link href="https://fonts.bunny.net/css?family=space-grotesk:400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/@unocss/reset/normalize.css">
+  <link href="https://fonts.bunny.net/css?family=space-grotesk:400,500,600,700" rel="stylesheet" />
+  
   <style>
     :root {
-      --text-color: #1a1a1a;
-      --accent-color: #7d82b8;
-      --background-color: #f7f7f7;
+      --background-color: #ffffff;
+      --text-color: #111111;
+      --accent-color: #555555;
     }
-
     body {
       font-family: 'Space Grotesk', system-ui, sans-serif;
-      background: var(--background-color);
+      background-color: var(--background-color);
       color: var(--text-color);
-      margin: 0;
-      padding: 0;
-      font-size: 1rem;
-      line-height: 1.8;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: 8vh auto;
-      padding: 0 1.5rem;
-    }
-
-    header {
-      text-align: left;
-      margin-bottom: 5rem;
-    }
-
-    header h1 {
-      font-size: clamp(2.5rem, 6vw, 4rem);
-      font-weight: 500;
-      letter-spacing: -0.03em;
-      margin: 0;
-      border-bottom: 1px solid var(--accent-color);
-      display: inline-block;
-      padding-bottom: 0.2em;
-    }
-
-    main {
-      font-size: clamp(1rem, 2.5vw, 1.2rem);
-    }
-
-    main p {
-      margin-bottom: 2.5rem;
-      max-width: 36em;
-    }
-
-    main p:first-of-type {
-      font-style: italic;
-      color: var(--accent-color);
-    }
-
-    main p:nth-of-type(5),
-    main p:nth-of-type(9) {
-      font-style: italic;
-    }
-
-    .tagline {
-      margin-top: 8rem;
-      font-size: clamp(1.2rem, 3vw, 1.5rem);
-      font-weight: 500;
-      text-align: center;
-      color: var(--accent-color);
-      letter-spacing: 0.04em;
-    }
-
-    footer {
-      margin-top: 12vh;
-      font-size: 0.75rem;
-      text-align: center;
-      opacity: 0.5;
-    }
-
-    @media (max-width: 640px) {
-      header h1 {
-        text-align: center;
-      }
-
-      .container {
-        padding: 0 1rem;
-      }
-
-      main p {
-        margin-bottom: 2rem;
-      }
     }
   </style>
 </head>
-<body class="px-4 py-10">
-  <div class="container">
-    <header>
-      <h1>Neptune Velocity</h1>
+
+<body class="px-4 py-10 sm:px-8 sm:py-20">
+  <div class="max-w-3xl mx-auto">
+    <header class="text-center mb-16">
+      <h1 class="text-5xl sm:text-7xl font-bold leading-tight tracking-tight">
+        Neptune<span class="block text-gray-600">Velocity</span>
+      </h1>
+      <p class="text-xl sm:text-2xl text-gray-500 mt-4">A studio for navigating complexity and designing clarity.</p>
     </header>
 
-    <main>
+    <main class="prose prose-lg prose-neutral mx-auto">
       <p>What if you were planning a trip to Neptune?</p>
       <p>First off, it’s a bad idea. But let’s ignore that for a second.</p>
       <p>Start planning the trip: what would you need first? A ride, obviously. After that? Probably an outfit. A good playlist. Maybe something to share with the aliens, just in case.</p>
       <p>You’d need a plan.</p>
-      <p>The trip is long. The distance is vast. Even if you have a good ship, full of fuel and food, you still need something more: a team. A crew you can trust. You wouldn’t make that trip with just anybody.</p>
-      <p>You’d need help on the ground, too.</p>
-      <p>Because when you're heading toward something that no one’s really mapped—when even your best research is just a series of educated guesses—you don’t just need a vehicle. You need navigators. People who know how to chart the distance between where you are and where you want to go. People who know how to spot the rocks you can't yet see.</p>
-      <p>That’s where we come in.</p>
-      <p>Neptune is flight school, thought partner, planning committee, and mission control. We’ve made the trip—and back—enough times to know it’s not about having the fanciest ship. It's about how you move through uncertainty.</p>
-      <p>If you know where you want to go, we’ll help you plot the course—and actually get there.</p>
+      <p>The trip is long. The distance is vast. Even if you have a good ship, full of fuel and food, you still need something more: a team. A crew you can trust. You wouldn't make that trip with just anybody.</p>
+      <p>You'd need help on the ground, too.</p>
+      <p>Because when you're heading toward something that no one's really mapped—when even your best research is just a series of educated guesses—you don't just need a vehicle. You need navigators. People who know how to chart the distance between where you are and where you want to go. People who know how to spot the rocks you can't yet see.</p>
+      <p>That's where we come in.</p>
+      <p>Neptune is flight school, thought partner, planning committee, and mission control. We've made the trip—and back—enough times to know it's not about having the fanciest ship. It's about how you move through uncertainty.</p>
+      <p>If you know where you want to go, we'll help you plot the course—and actually get there.</p>
     </main>
 
-    <div class="tagline">
-      Velocity Made Good.<br>Strategy for the path ahead.
-    </div>
-
-    <footer>
-      Neptune Velocity — 2025
+    <footer class="mt-20 text-center text-sm text-gray-400">
+      Velocity Made Good.
     </footer>
   </div>
 </body>
