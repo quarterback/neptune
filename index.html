@@ -3,45 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A critical design studio based in Seattle.">
+    <meta name="description" content="A studio for practical clarity in complex systems. We help senior leaders navigate the space between vision and consequence.">
     <title>Neptune Velocity</title>
-    <link rel="stylesheet" href="https://fonts.bunny.net/css?family=libre-franklin:400,500,700|merriweather:400,700">
+    <link rel="stylesheet" href="https://fonts.bunny.net/css?family=playfair-display:700,900|source-sans-pro:400,600">
     <style>
         :root {
-            --dark-blue: #0a1f2e;
-            --medium-blue: #1c3745;
-            --light-gray: #f5f5f5;
-            --off-white: #f9f9f9;
-            --accent: #437c90;
-            --muted: #718096;
+            --cerulean: #437c90;
+            --dark-slate-gray: #255957;
+            --eggshell: #eeebd3;
+            --dark-goldenrod: #a98743;
+            --saffron: #f7c548;
         }
         
-        * {
-            box-sizing: border-box;
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-slate-gray);
+            background-color: var(--eggshell);
             margin: 0;
             padding: 0;
         }
         
-        body {
-            font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: var(--dark-blue);
-            background-color: var(--off-white);
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8vh 5vw;
         }
         
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 60px 24px;
+        header {
+            margin-bottom: 4vh;
+            position: relative;
         }
         
         h1 {
-            font-family: 'Merriweather', Georgia, serif;
-            font-size: 44px;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 32px;
-            color: var(--dark-blue);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 10vw, 5rem);
+            font-weight: 900;
+            margin: 0;
+            line-height: 1;
+            color: var(--cerulean);
+            position: relative;
         }
+        
+        h1::after {
+            content: "";
+            position: absolute;
+            height: 15px;
+            width: 80px;
+            background-color: var(--saffron);
+            bottom: -20px;
+            left: 5px;
+        }
+        
+        p {
+            font-size: clamp(1.1rem, 2vw, 1.25rem);
+            margin-bottom: 1.5rem;
+            max-width: 42em;
+        }
+        
+        .teaser {
+            margin: 6vh 0;
+        }
+        
+        .teaser p {
+            font-size: clamp(1.25rem, 2vw, 1.4rem);
+        }
+        
+        .teaser p:first-of-type {
+            font-weight: 600;
+            color: var(--dark-goldenrod);
+        }
+        
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            color: var(--cerulean);
+            margin: 4vh 0;
+            padding-left: 20px;
+            border-left: 8px solid var(--saffron);
+        }
+        
+        .contact {
+            margin-top: 6vh;
+            padding-top: 4vh;
+            border-top: 3px solid var(--dark-goldenrod);
+            font-size: 1.1rem;
+        }
+        
+        .footer {
+            margin-top: 5vh;
+            font-size: 0.9rem;
+            color: var(--cerulean);
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 4vh 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Neptune Velocity</h1>
+        </header>
+        
+        <div class="teaser">
+            <p>What if you were planning a trip to Neptune?</p>
+            
+            <p>First off, it's a bad idea. But let's ignore that for a second.</p>
+            
+            <p>Start planning the trip: what would you need first? A ride, obviously. After that? Probably an outfit. A good playlist. Maybe something to share with the aliens, just in case.</p>
+            
+            <p>You'd need a plan.</p>
+            
+            <p>The trip is long. The distance is vast. Even if you have a good ship, full of fuel and food, you still need something more: a team. A crew you can trust. You wouldn't make that trip with just anybody.</p>
+            
+            <p>You'd need help on the ground, too.</p>
+            
+            <p>Because when you're heading toward something that no one's really mapped — when even your best research is just a series of educated guesses — you don't just need a vehicle. You need navigators. You need people who know how to chart the distance between where you are and where you want to go. People who know how to spot the rocks you can't yet see.</p>
+            
+            <p>That's where we come in.</p>
+            
+            <p>Neptune is flight school, thought partner, planning committee, and mission control. We've made the trip — and back — enough times to know it's not about having the fanciest ship. It's about how you move through uncertainty.</p>
+            
+            <p>If you know where you want to go, we'll help you plot the course — and actually get there.</p>
+        </div>
+        
+        <div class="tagline">
+            Velocity Made Good. Strategy for the path ahead.
+        </div>
+        
+        <div class="contact">
+            <p>Contact: <a href="mailto:hello@neptunevelocity.com" style="color: var(--dark-slate-gray); font-weight: 600;">hello@neptunevelocity.com</a></p>
+        </div>
+        
+        <div class="footer">
+            <div>© 2025 Neptune Velocity</div>
+        </div>
+    </div>
+</body>
+</html>
