@@ -16,56 +16,86 @@
 
     body {
       font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.75;
       background: var(--background-color);
       color: var(--text-color);
       margin: 0;
       padding: 0;
-      min-height: 100vh;
+      font-size: 1rem;
+      line-height: 1.8;
     }
 
     .container {
-      max-width: 720px;
-      margin: 10vh auto;
-      padding: 0 2rem;
+      max-width: 700px;
+      margin: 8vh auto;
+      padding: 0 1.5rem;
     }
 
     header {
-      text-align: center;
-      margin-bottom: 4rem;
+      text-align: left;
+      margin-bottom: 5rem;
     }
 
     header h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 1rem;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      margin: 0;
+      border-bottom: 1px solid var(--accent-color);
+      display: inline-block;
+      padding-bottom: 0.2em;
+    }
+
+    main {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
     }
 
     main p {
       margin-bottom: 2.5rem;
+      max-width: 36em;
+    }
+
+    main p:first-of-type {
+      font-style: italic;
+      color: var(--accent-color);
+    }
+
+    main p:nth-of-type(5),
+    main p:nth-of-type(9) {
+      font-style: italic;
     }
 
     .tagline {
-      margin-top: 6rem;
-      font-size: 1.3rem;
-      font-weight: 600;
+      margin-top: 8rem;
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      font-weight: 500;
       text-align: center;
       color: var(--accent-color);
-      letter-spacing: 0.02em;
+      letter-spacing: 0.04em;
     }
 
     footer {
-      margin-top: 10vh;
-      font-size: 0.7rem;
+      margin-top: 12vh;
+      font-size: 0.75rem;
       text-align: center;
-      color: var(--text-color);
       opacity: 0.5;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        text-align: center;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      main p {
+        margin-bottom: 2rem;
+      }
     }
   </style>
 </head>
-<body class="flex flex-col items-center justify-start py-20 px-6">
+<body class="px-4 py-10">
   <div class="container">
     <header>
       <h1>Neptune Velocity</h1>
