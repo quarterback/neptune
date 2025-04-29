@@ -6,60 +6,90 @@
   <title>Neptune Velocity</title>
   <meta name="description" content="Neptune Velocity is a studio for navigating complexity at human scale. Systems, services, decisions—mapped for the long distance ahead.">
   <script src="https://unpkg.com/@unocss/runtime"></script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2285%22>🧭</text></svg>">
-  <link href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,600|spectral-sc:700" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,600" rel="stylesheet" />
   <style>
     :root {
-      --bright-pink-crayola: #ef798a;
-      --melon: #f7a9a8;
-      --glaucous: #7d82b8;
-      --finn: #613f75;
-      --fairy-tale: #e5c3d1;
+      --text-color: #1a1a1a;
+      --accent-color: #7d82b8;
+      --background-color: #f7f7f7; /* Very flat, almost blank paper */
     }
 
     body {
       font-family: 'IBM Plex Sans', system-ui, sans-serif;
-      color: #4c4764;
-      background: radial-gradient(circle at top, var(--melon) 0%, var(--fairy-tale) 100%);
-      min-height: 100vh;
+      background: var(--background-color);
+      color: var(--text-color);
       margin: 0;
+      padding: 0;
+      font-size: 1.125rem;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 10vh auto;
+      padding: 0 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    main p {
+      margin-bottom: 2rem;
+    }
+
+    .tagline {
+      margin-top: 4rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 8vh;
+      font-size: 0.75rem;
+      text-align: center;
+      color: var(--text-color);
+      opacity: 0.5;
     }
   </style>
 </head>
 
 <body class="flex flex-col items-center justify-start py-20 px-6">
-  <header class="text-center mb-10">
-    <h1 class="font-spectral-sc text-5xl md:text-7xl tracking-wider text-[#613f75]">Neptune Velocity</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Neptune Velocity</h1>
+    </header>
 
-  <main class="max-w-2xl w-full text-lg leading-relaxed text-[#4c4764] space-y-6">
-    <p class="text-xl font-semibold text-[#7d82b8]">What if you were planning a trip to Neptune?</p>
+    <main>
+      <p>What if you were planning a trip to Neptune?</p>
+      <p>First off, it’s a bad idea. But let’s ignore that for a second.</p>
+      <p>Start planning the trip: what would you need first? A ride, obviously. After that? Probably an outfit. A good playlist. Maybe something to share with the aliens, just in case.</p>
+      <p>You’d need a plan.</p>
+      <p>The trip is long. The distance is vast. Even if you have a good ship, full of fuel and food, you still need something more: a team. A crew you can trust. You wouldn’t make that trip with just anybody.</p>
+      <p>You’d need help on the ground, too.</p>
+      <p>Because when you're heading toward something that no one’s really mapped—when even your best research is just a series of educated guesses—you don’t just need a vehicle. You need navigators. People who know how to chart the distance between where you are and where you want to go. People who know how to spot the rocks you can't yet see.</p>
+      <p>That’s where we come in.</p>
+      <p>Neptune is flight school, thought partner, planning committee, and mission control. We’ve made the trip—and back—enough times to know it’s not about having the fanciest ship. It's about how you move through uncertainty.</p>
+      <p>If you know where you want to go, we’ll help you plot the course—and actually get there.</p>
+    </main>
 
-    <p>First off, it’s a bad idea. But let’s ignore that for a second.</p>
+    <div class="tagline">
+      Velocity Made Good.<br>Strategy for the path ahead.
+    </div>
 
-    <p>Start planning the trip: what would you need first? A ride, obviously. After that? Probably an outfit. A good playlist. Maybe something to share with the aliens, just in case.</p>
-
-    <p>You’d need a plan.</p>
-
-    <p>The trip is long. The distance is vast. Even if you have a good ship, full of fuel and food, you still need something more: a team. A crew you can trust. You wouldn’t make that trip with just anybody.</p>
-
-    <p>You’d need help on the ground, too.</p>
-
-    <p>Because when you're heading toward something that no one’s really mapped—when even your best research is just a series of educated guesses—you don’t just need a vehicle. You need navigators. People who know how to chart the distance between where you are and where you want to go. People who know how to spot the rocks you can't yet see.</p>
-
-    <p>That’s where we come in.</p>
-
-    <p>Neptune is flight school, thought partner, planning committee, and mission control. We’ve made the trip—and back—enough times to know it’s not about having the fanciest ship. It's about how you move through uncertainty.</p>
-
-    <p>If you know where you want to go, we’ll help you plot the course—and actually get there.</p>
-
-    <p class="text-center font-spectral-sc text-2xl mt-16 text-[#7d82b8]">
-      Velocity Made Good. <br /> Strategy for the path ahead.
-    </p>
-  </main>
-
-  <footer class="mt-20 text-xs opacity-60 text-[#613f75]">
-    Neptune Velocity · 2025
-  </footer>
+    <footer>
+      Neptune Velocity — 2025
+    </footer>
+  </div>
 </body>
 </html>
