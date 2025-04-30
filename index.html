@@ -14,58 +14,53 @@
         extend: {
           colors: {
             neptune: {
-              background: '#e3ecf3',
+              background: '#f8fafc',
               text: '#0a1f2e',
               accent: '#0233aa',
-              muted: '#6b7280',
-              bright: '#cce1ff',
-              deep: '#021a40'
+              muted: '#6b7280'
             }
           },
           fontFamily: {
-            sans: ['Space Grotesk', 'ui-sans-serif', 'system-ui']
-          }
+            sans: ['ui-sans-serif', 'system-ui']
+          },
+          typography: (theme) => ({
+            DEFAULT: {
+              css: {
+                color: theme('colors.neptune.text'),
+                a: { color: theme('colors.neptune.accent') },
+                strong: { color: theme('colors.neptune.text') }
+              }
+            }
+          })
         }
       }
     }
   </script>
-  <link href="https://fonts.bunny.net/css?family=space-grotesk:400,500,600,700" rel="stylesheet" />
 </head>
 
-<body class="font-sans text-neptune-text">
-  <div class="max-w-4xl mx-auto px-4 sm:px-8">
-    <header class="text-center py-20 bg-neptune-background">
-      <h1 class="text-5xl sm:text-7xl font-bold leading-tight tracking-tight">
+<body class="font-sans text-neptune-text bg-neptune-background">
+  <div class="max-w-4xl mx-auto px-6 sm:px-10 py-24">
+    <header class="text-center mb-20">
+      <h1 class="text-6xl sm:text-8xl font-bold leading-tight tracking-tight">
         Neptune <span class="block text-neptune-accent">Velocity</span>
       </h1>
-      <p class="text-xl sm:text-2xl text-neptune-muted mt-4">A studio for navigating complexity and designing clarity.</p>
+      <p class="text-2xl sm:text-3xl text-neptune-muted mt-6">A studio for navigating complexity and designing clarity.</p>
     </header>
 
-    <main class="prose prose-lg prose-slate mx-auto">
-      <section class="py-16 px-4 bg-white">
-        <p>What if you were planning a trip to Neptune?</p>
-        <p>First off, it’s a bad idea. But let’s ignore that for a second.</p>
-        <p>Start planning the trip: what would you need first? A ride, obviously. After that? Probably an outfit. A good playlist. Maybe something to share with the aliens, just in case.</p>
-        <p>You’d need a plan.</p>
-      </section>
-
-      <section class="py-16 px-4 bg-neptune-bright">
-        <p>The trip is long. The distance is vast. Even if you have a good ship, full of fuel and food, you still need something more: a team. A crew you can trust. You wouldn't make that trip with just anybody.</p>
-        <p>You'd need help on the ground, too.</p>
-      </section>
-
-      <section class="py-16 px-4 bg-white">
-        <p>Because when you're heading toward something that no one's really mapped—when even your best research is just a series of educated guesses—you don't just need a vehicle. You need navigators. People who know how to chart the distance between where you are and where you want to go. People who know how to spot the rocks you can't yet see.</p>
-        <p>That's where we come in.</p>
-      </section>
-
-      <section class="py-16 px-4 bg-neptune-background">
-        <p>Neptune is flight school, thought partner, planning committee, and mission control. We've made the trip—and back—enough times to know it's not about having the fanciest ship. It's about how you move through uncertainty.</p>
-        <p>If you know where you want to go, we'll help you plot the course—and actually get there.</p>
-      </section>
+    <main class="prose prose-xl prose-slate mx-auto">
+      <p>What if you were planning a trip to Neptune?</p>
+      <p>First off, it’s a bad idea. But let’s ignore that for a second.</p>
+      <p>Start planning the trip: what would you need first? A ride, obviously. After that? Probably an outfit. A good playlist. Maybe something to share with the aliens, just in case.</p>
+      <p>You’d need a plan.</p>
+      <p>The trip is long. The distance is vast. Even if you have a good ship, full of fuel and food, you still need something more: a team. A crew you can trust. You wouldn't make that trip with just anybody.</p>
+      <p>You'd need help on the ground, too.</p>
+      <p>Because when you're heading toward something that no one's really mapped—when even your best research is just a series of educated guesses—you don't just need a vehicle. You need navigators. People who know how to chart the distance between where you are and where you want to go. People who know how to spot the rocks you can't yet see.</p>
+      <p>That's where we come in.</p>
+      <p>Neptune is flight school, thought partner, planning committee, and mission control. We've made the trip—and back—enough times to know it's not about having the fanciest ship. It's about how you move through uncertainty.</p>
+      <p>If you know where you want to go, we'll help you plot the course—and actually get there.</p>
     </main>
 
-    <footer class="text-center text-sm text-neptune-muted border-t pt-6 pb-10 bg-white">
+    <footer class="mt-24 text-center text-sm text-neptune-muted border-t pt-6">
       Velocity Made Good.
     </footer>
   </div>
